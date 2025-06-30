@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container" id="ageForm" novalidate>
+    <div class="input-field">
+      <label for="day" class="label-input">DAY
+        <input type="text" class="day" placeholder="DD" id="day" autocomplete="off">
+        <span class="error" id="day-error"></span>
+      </label>
+      <label for="month" class="label-input">MONTH
+        <input type="text" class="month" placeholder="MM" id="month" autocomplete="off">
+        <span class="error" id="month-error"></span>
+      </label>
+      <label for="year" class="label-input">YEAR
+        <input type="text" class="year" placeholder="YYYY" id="year" autofocus="off">
+        <span class="error" id="year-error"></span>
+      </label>
+    </div>
+    <div class="line">
+      <hr>
+    </div>
+    <div class="btn">
+      <button type="submit" id="submitBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="display-area">
+      <p class="yY"><span class="viol" id="years">--</span> years</p>
+      <p class="mM"><span class="viol" id="months">--</span> months</p>
+      <p class="dD"><span class="viol" id="days">--</span> days</p>
+    </div>
+    <div class="credits">
+      <p>Made By <a href="https://github.com/DashFrontDev" class="rm">RM</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

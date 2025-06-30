@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 86%);
+}
+
+.card-container {
+  border-radius:25px 25px 200px 25px;
+  background-color: hsl(0, 100%, 100%);
+  width: 900px;
+  height: 650px;
+  padding:0 5em 0 5em;
+}
+
+label {
+  font-weight:700;
+  color: hsl(0, 1%, 44%);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+label, input {
+  display: block;
+}
+
+.input-field {
+  display: flex;
+  justify-content: flex-start;
+  margin:3rem 0 0 0; 
+  gap:2rem;
+}
+
+input {
+  font-size: 32px;
+  font-weight: 700;
+  padding:0 0 0 1em;
+  border: 1px solid hsl(0, 1%, 44%);
+  width: 160px;
+  height: 70px;
+  border-radius:10px;
+  margin:0.5rem 0 0 0;
+}
+
+.label-input.error {
+  border-color: hsl(0, 100%, 67%); 
+}
+
+
+.input-error {
+  border-color: hsl(0, 100%, 67%) !important;
+}
+
+.error {
+  color: hsl(0, 100%, 67%);
+}
+
+.line {
+  margin:3rem 0 0 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom:2rem;
+  z-index: 1;
+  position: relative;
+}
+
+button {
+  border-radius: 50%;
+  position: absolute;
+  bottom:-50px;
+  background: hsl(259, 100%, 65%);
+  border:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(0, 0%, 0%);
+  color:hsl(0, 100%, 100%);
+}
+.viol {
+  color: hsl(259, 100%, 65%);
+}
+
+.display-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin:3rem 0 5rem 0;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+input:focus {
+  border-color:hsl(259, 100%, 65%);
+  outline: none;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  font-weight:800;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.rm {
+  color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    width: 350px;
+    height: 500px;
+    padding:0 2em 0 2em;
+    border-radius:25px 25px 100px 25px;
+  }
+  
+  .line{
+  margin:4rem 0 0 0;
+  }
+  
+  .input-field {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0 0 0;
+  }
+  
+  input {
+    width: 80px;
+    height: 50px;
+    margin:0.5rem 0 0 0;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  button {
+    height: 60px;
+    width:60px;
+    bottom:-30px;
+  }
+  
+  .display-area{
+    font-size:3rem;
+    letter-spacing: 1px;
+  }
+  
+  label {
+    font-size: 12px;
+    margin:0;
+  }
+  
+  .btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom:2rem;
+  z-index: 1;
+  position: relative;
+}
+.credits {
+  font-size: 1rem;
+}
+
+input::placeholder {
+  font-size: 18px;
+}
+
+}
+
+@media (max-width: 375px) {
+   .card-container {
+    width: 300px;
+    height: 500px;
+    padding:0 2em 0 2em;
+    border-radius:25px 25px 100px 25px;
+  }
+  .display-area{
+    font-size:2.5rem;
+    letter-spacing: 1px;
+    margin-top:5rem;
+  }
+  .credits {
+  font-size: 1rem;
+}
+input::placeholder {
+  font-size: 18px;
+}
+}
